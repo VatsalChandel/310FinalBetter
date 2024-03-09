@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logincss.css') }}">
+</head>
+<body>
+    <div class="profile-form-container">
+        <h1>Personalized Assistance</h1>
+        <div class="user-info">
+            <p>{{ assistance }}</p>
+        </div>
+        <div class="input-group">
+            <button onclick="window.location.href='{{ url_for('index') }}'">Back to Main Page</button>
+        </div>
+
+        <div>
+            <h1>If you feeling extremley unwell, please contact your healthcare provider or call 911!</h1>
+        </div>
+    </div>
+
+   
+</body>
+</html>

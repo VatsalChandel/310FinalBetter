@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logincss.css') }}">
+</head>
+<body>
+    <div class="profile-form-container">
+        <h1>User History</h1>
+        <div class="user-info">
+            <table>
+                <thead>
+                    <tr>
+                        <th>User Age</th>
+                        <th>User Height (in)</th>
+                        <th>User Weight (lbs)</th>
+                        <th>User Gender</th>
+                        <th>User Medications</th>
+                        <th>Glucose Level (mmol/L)</th>
+                        <th>Activity</th>
+                        <th>Timestamp</th>
+                        <th>Advice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in history_entries %}
+                    <tr>
+                        <td>{{ entry.user_age }}</td>
+                        <td>{{ entry.user_height }}</td>
+                        <td>{{ entry.user_weight }}</td>
+                        <td>{{ entry.user_gender }}</td>
+                        <td>{{ entry.user_medications }}</td>
+                        <td>{{ entry.glucose_level }}</td>
+                        <td>{{ entry.activity }}</td>
+                        <td>{{ entry.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td> 
+                        <td>{{ entry.assistance }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="input-group">
+            <button onclick="window.location.href='{{ url_for('index') }}'">Back to Main Page</button>
+        </div>
+    </div>
+</body>
+</html>

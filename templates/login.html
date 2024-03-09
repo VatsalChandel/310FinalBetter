@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logincss.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="profile-form-container">
+        <h2>Login</h2> 
+        <form action='/submit-login' method="post">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="user">
+            </div>
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="text" id="age" name="user_age">
+            </div>
+            <div class="input-group">
+                <label for="height">Height (inches)</label>
+                <input type="text" id="height" name="user_height">
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (lbs)</label>
+                <input type="text" id="weight" name="user_weight">
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="user_gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="diabetes">Diabetes</label>
+                <select id="diabetes" name="user_diabetes">
+                    <option value="type1">Type 1</option>
+                    <option value="type2">Type 2</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="medications">Medications</label>
+                <input type="text" id="medications" name="user_medications">
+            </div>
+            <div class="input-group">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

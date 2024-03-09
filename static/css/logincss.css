@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form p {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+    color: #333;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4a47a3;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #3a3788;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+label {
+    font-size: 0.9em;
+    color: #666;
+}
+
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%234a47a3" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+input[type="text"],
+select {
+    padding: 12px;
+    font-size: 0.9em;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4a47a3;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3a3788;
+}
+
+
+/* Add this to your existing CSS file */
+
+/* Overall body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the form and history */
+.profile-form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Styling for table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4a47a3;
+    color: white;
+}
+
+/* Hover effect for rows */
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #4a47a3; /* Purple */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3a3788; /* Darker purple */
+}
+
+/* Link as button style */
+a.button-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: #4a47a3;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+a.button-link:hover {
+    background-color: #3a3788;
+}
