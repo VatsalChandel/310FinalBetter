@@ -6,13 +6,13 @@
 </head>
 <body>
     <div class="profile-form-container">
-        <h2>Welcome to the Home Page, {{ user }} </h2>
+        <h2>Welcome, {{ user }} </h2>
         <div class="user-info">
             <p>User Information:</p>
             <ul>
                 <li>Age: {{ user_age }}</li>
-                <li>Height: {{ user_height }} cm</li>
-                <li>Weight: {{ user_weight }} kg</li>
+                <li>Height: {{ user_height }} inches</li>
+                <li>Weight: {{ user_weight }} lbs</li>
                 <li>Gender: {{ user_gender }}</li>
                 <li>Medications: {{ user_medications }}</li>
                 <li>Diabetes: {{ diabetes }}</li>
@@ -20,13 +20,13 @@
         </div>
         
         <div class="activity-form">
-            <h2>What did you do in the last 30 minutes?</h2>
             <form action="/submit-activity" method="post">
+                <h2>What did you do in the last 30 minutes?</h2>
                 <div class="input-group">
                     <input type="text" name="activity">
                 </div>
                 <div class="input-group">
-                    <label for="glucose">Glucose Level (mmol/L):</label>
+                    <h2 for="glucose">Glucose Level (mmol/L):</h2>
                     <input type="text" id="glucose" name="glucose">
                 </div>
                 <button type="submit">Submit</button>
@@ -36,6 +36,11 @@
         <div class="history-link">
             <h2>History</h2>
             <a href="{{ url_for('history') }}" class="button">View History</a>
+        </div>
+
+        <div class="history-link">
+            <h2>Change Information</h2>
+            <a href="{{ url_for('login') }}" class="button">Change Information</a>
         </div>
 
 

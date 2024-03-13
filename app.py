@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 import openai
 from flask_sqlalchemy import SQLAlchemy
-import os
 from datetime import datetime
 import keys
 
