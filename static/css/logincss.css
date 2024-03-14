@@ -69,7 +69,7 @@ select {
     -moz-appearance: none; 
     appearance: none; 
     background-color: white;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%234a47a3" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom dropdown arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%234a47a3" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
     background-position-x: 98%;
     background-position-y: 50%;
@@ -104,9 +104,7 @@ select {
 }
 
 
-/* Add this to your existing CSS file */
 
-/* Overall body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -114,7 +112,6 @@ body {
     padding: 20px;
 }
 
-/* Container for the form and history */
 .profile-form-container {
     background-color: #ffffff;
     padding: 20px;
@@ -124,7 +121,6 @@ body {
     margin: auto;
 }
 
-/* Styling for table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -142,14 +138,12 @@ th {
     color: white;
 }
 
-/* Hover effect for rows */
 tr:hover {
     background-color: #f2f2f2;
 }
 
-/* Styling for buttons */
 button {
-    background-color: #4a47a3; /* Purple */
+    background-color: #4a47a3; 
     color: white;
     padding: 10px 15px;
     border: none;
@@ -161,10 +155,9 @@ button {
 }
 
 button:hover {
-    background-color: #3a3788; /* Darker purple */
+    background-color: #3a3788; 
 }
 
-/* Link as button style */
 a.button-link {
     text-decoration: none;
     color: white;
